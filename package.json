@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "dev": "concurrently -n API,WEB \"yarn workspace trello-api dev\" \"yarn workspace trello-web dev\"",
+    "build": "yarn workspaces run build",
+    "start": "yarn workspaces run start"
+  },
+  "devDependencies": {
+  "concurrently": "^x.x.x"
+}
+}
