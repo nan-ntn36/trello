@@ -1,12 +1,13 @@
 {
   "private": true,
   "workspaces": ["apps/*"],
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "dev": "concurrently -n API,WEB \"yarn workspace trello-api dev\" \"yarn workspace trello-web dev\"",
     "build": "yarn workspaces run build",
     "start": "yarn workspaces run start"
   },
   "devDependencies": {
-  "concurrently": "^x.x.x"
+  "concurrently": "8.2.2"
 }
 }
